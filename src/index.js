@@ -16,7 +16,7 @@ class App extends Component{
 		super(props);
 		this.state = {
 			videos: [],
-			selectedVideo:null
+			selectedVideo: null
 		};
 		YTSearch({key:API_KEY, term: 'Avnish Chhikara'}, (videos) => {
 			this.setState({
